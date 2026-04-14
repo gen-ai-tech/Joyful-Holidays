@@ -4,15 +4,15 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
-# ✅ ADD THIS BLOCK (IMPORTANT FIX)
 permissions:
   contents: read
   pages: write
   id-token: write
+
+# ✅ ADD THIS
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   deploy:
@@ -28,7 +28,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'   # your website root (index.html)
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
