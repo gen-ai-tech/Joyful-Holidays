@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Joyful Holidays | Best Travel Agency in Salem</title>
+    <meta name="description" content="Official website for The Joyful Holidays, Salem. Expert school & college tours, trekking, and camping adventures across South India. Contact: +91 7708666628.">
+    <meta name="keywords" content="travel agency in Salem, school tour operators Salem, adventure trekking Tamil Nadu, camping South India, college industrial visits Salem, The Joyful Holidays official">
+    <meta property="og:title" content="The Joyful Holidays | Salem's Premier Tour Operator">
+    <meta property="og:description" content="Experience the thrill of discovery with The Joyful Holidays. School tours, trekking, and camping adventures from Salem.">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --white: #FFFFFF;
+            --near-white: #F9F9FB;
+            --purple: #6a01b5;
+            --purple-light: #8b28df;
+            --purple-deep: #4b0082;
+            --purple-soft: rgba(106, 1, 181, 0.08);
+            --text-dark: #1A1209;
+            --text-muted: rgba(26, 18, 9, 0.65);
+            --gold: #C8960C;
+            --gray-light: #EDEDED;
+            --border: rgba(106, 1, 181, 0.15);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--white);
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1.25rem 4rem;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            transition: padding 0.3s;
+        }
+
+        .logo {
+            display: flex; align-items: center; gap: 0.75rem;
+            text-decoration: none; color: var(--text-dark);
+        }
+
+        .logo-badge {
+            width: 42px; height: 42px;
+            background: linear-gradient(135deg, var(--purple), var(--purple-light));
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1rem; font-weight: 900;
+            color: var(--white);
+            letter-spacing: -1px;
+        }
+
+        .logo-text {
+            font-size: 1rem; font-weight: 700;
+            letter-spacing: 0.05em;
+            line-height: 1.2;
+        }
+
+        .logo-sub {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.6rem; font-weight: 300;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--purple-light);
+        }
+
+        .nav-links {
+            display: flex; gap: 2.5rem; list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute; bottom: -4px; left: 0; right: 0;
+            height: 2px;
+            background: var(--purple);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--cream); }
+        .nav-links a:hover::after { transform: scaleX(1); }
+
+        .nav-cta {
+            background: var(--purple);
+            color: var(--white) !important;
+            padding: 0.6rem 1.5rem;
+            border-radius: 100px;
+            font-weight: 500 !important;
+            letter-spacing: 0.08em !important;
+            transition: background 0.2s !important;
+        }
+        .nav-cta:hover { background: var(--purple-deep) !important; }
+        .nav-cta::after { display: none !important; }
+
+        /* HERO */
+        #hero {
+            min-height: 100vh;
+            position: relative;
+            display: flex; flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 4rem 6rem;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute; inset: 0;
+            background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            transform: scale(1.02);
+            animation: slowzoom 20s ease-in-out infinite alternate;
+        }
+
+        @keyframes slowzoom {
+            from { transform: scale(1.0); }
+            to   { transform: scale(1.08); }
+        }
+
+        .hero-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(
+                to top,
+                rgba(255, 255, 255, 1) 0%,
+                rgba(255, 255, 255, 0.45) 50%,
+                rgba(255, 255, 255, 0.1) 100%
+            );
+        }
+
+        .hero-badge {
+            position: relative;
+            display: inline-flex; align-items: center; gap: 0.75rem;
+            background: var(--purple);
+            border: 1px solid var(--purple-light);
+            border-radius: 100px;
+            padding: 0.6rem 1.5rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--white);
+            margin-bottom: 2rem;
+            width: fit-content;
+            box-shadow: 0 8px 25px rgba(106, 1, 181, 0.4);
+            animation: badgePulse 2.5s infinite ease-in-out;
+        }
+
+        @keyframes badgePulse {
+            0% { transform: scale(1); box-shadow: 0 8px 25px rgba(106, 1, 181, 0.4); }
+            50% { transform: scale(1.05); box-shadow: 0 12px 35px rgba(106, 1, 181, 0.6); }
+            100% { transform: scale(1); box-shadow: 0 8px 25px rgba(106, 1, 181, 0.4); }
+        }
+
+        .hero-badge span { width: 8px; height: 8px; background: var(--white); border-radius: 50%; animation: pulse 2s ease-in-out infinite; }
+        @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+
+        .hero-title {
+            position: relative;
+            font-size: clamp(3rem, 7vw, 6.5rem);
+            font-weight: 900;
+            line-height: 1.0;
+            letter-spacing: -0.04em;
+            margin-bottom: 1.5rem;
+            max-width: 14ch;
+            text-transform: uppercase;
+        }
+
+        .hero-title em {
+            font-style: italic;
+            color: var(--purple);
+        }
+
+        .hero-desc {
+            position: relative;
+            font-size: clamp(1rem, 1.4vw, 1.15rem);
+            font-weight: 300;
+            color: var(--text-muted);
+            max-width: 44ch;
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-actions {
+            position: relative;
+            display: flex; align-items: center; gap: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            background: var(--purple);
+            color: var(--white);
+            padding: 0.9rem 2rem;
+            border-radius: 100px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .btn-primary:hover { background: var(--purple-deep); transform: translateY(-3px) scale(1.02); box-shadow: 0 10px 20px rgba(106, 1, 181, 0.2); }
+
+        .btn-secondary {
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            border: 1px solid var(--border);
+            color: var(--purple);
+            padding: 0.9rem 2rem;
+            border-radius: 100px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .btn-secondary:hover { border-color: var(--purple); background: var(--purple-soft); transform: translateY(-2px); }
+
+        .hero-stats {
+            position: absolute;
+            top: 50%; right: 4rem;
+            transform: translateY(-50%);
+            display: flex; flex-direction: column; gap: 0.5rem;
+        }
+
+        .stat-pill {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 0.75rem 1.25rem;
+            text-align: center;
+            backdrop-filter: blur(12px);
+        }
+
+        .stat-num {
+            font-size: 2rem; font-weight: 900;
+            color: var(--purple);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.65rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .scroll-hint {
+            position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+            display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+            opacity: 0.4;
+            animation: bobdown 2s ease-in-out infinite;
+        }
+
+        @keyframes bobdown {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50%  { transform: translateX(-50%) translateY(6px); }
+        }
+
+        .scroll-hint span {
+            font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase;
+        }
+
+        /* INTRO STRIP */
+        .intro-strip {
+            background: var(--near-white);
+            padding: 1.25rem 4rem;
+            display: flex; justify-content: center; align-items: center; gap: 3rem;
+            flex-wrap: wrap;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .strip-item {
+            display: flex; align-items: center; gap: 0.6rem;
+            font-size: 0.78rem;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+        }
+
+        .strip-item i { color: var(--purple); font-size: 0.85rem; }
+
+        /* SERVICES */
+        #services {
+            padding: 7rem 4rem;
+            background: var(--white);
+        }
+
+        .section-eyebrow {
+            font-size: 0.7rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--purple);
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3.25rem);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .section-title em { font-style: italic; color: var(--purple); }
+
+        .section-lead {
+            font-size: 1rem;
+            font-weight: 300;
+            color: var(--text-muted);
+            max-width: 50ch;
+            line-height: 1.75;
+            margin-bottom: 4rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: default;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-img {
+            height: 180px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            border-bottom: 2px solid var(--purple-soft);
+        }
+
+        .service-content {
+            padding: 2.5rem 2rem;
+            flex: 1;
+            position: relative;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 3px;
+        }
+
+        .service-card.green::before  { background: var(--purple); }
+        .service-card.gold::before   { background: var(--purple-light); }
+        .service-card.bark::before   { background: var(--purple-deep); }
+        .service-card.sage::before   { background: var(--purple); }
+
+        .service-card:hover {
+            border-color: var(--purple);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(106, 1, 181, 0.08);
+        }
+
+        .service-icon {
+            width: 52px; height: 52px;
+            border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            margin-top: -4.5rem;
+            background: var(--white);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 2;
+        }
+
+        .service-icon.green { background: var(--purple-soft); color: var(--purple); }
+        .service-icon.gold  { background: var(--purple-soft); color: var(--purple); }
+        .service-icon.bark  { background: var(--purple-soft); color: var(--purple); }
+        .service-icon.sage  { background: var(--purple-soft); color: var(--purple); }
+
+        .service-card h3 {
+            font-size: 1.3rem; font-weight: 700;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+        }
+
+        .service-card p {
+            font-size: 0.9rem; font-weight: 400;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        .service-tag {
+            display: inline-block;
+            margin-top: 1.25rem;
+            font-size: 0.68rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 0.3rem 0.75rem;
+            border-radius: 100px;
+            background: var(--purple-soft);
+            color: var(--purple);
+        }
+
+        /* DESTINATIONS */
+        #destinations {
+            padding: 7rem 4rem;
+            background: var(--near-white);
+        }
+
+        .destinations-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .dest-list {
+            display: flex; flex-direction: column; gap: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        .dest-item {
+            display: flex; align-items: center; gap: 1rem;
+            padding: 1rem 1.25rem;
+            border: 1px solid var(--border);
+            background: var(--white);
+            border-radius: 12px;
+            transition: all 0.2s;
+        }
+
+        .dest-item:hover {
+            border-color: var(--purple);
+            background: var(--purple-soft);
+            transform: translateX(5px);
+        }
+
+        .dest-dot {
+            width: 8px; height: 8px;
+            background: var(--purple);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .dest-name {
+            font-size: 0.95rem; font-weight: 400;
+            flex: 1;
+        }
+
+        .dest-type {
+            font-size: 0.68rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .visual-card {
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            height: 480px;
+        }
+
+        .visual-card img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .visual-card-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(106, 1, 181, 0.45) 0%, transparent 60%);
+        }
+
+        .visual-card-text {
+            position: absolute; bottom: 1.75rem; left: 1.75rem; right: 1.75rem;
+        }
+
+        .visual-card-text h4 {
+            font-size: 1.5rem; font-weight: 700;
+            margin-bottom: 0.25rem;
+            color: var(--white);
+        }
+
+        .visual-card-text p {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* WHY US */
+        #why {
+            padding: 7rem 4rem;
+            background: var(--white);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .why-item {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .why-icon {
+            font-size: 1.6rem;
+            color: var(--purple);
+            margin-bottom: 1rem;
+        }
+
+        .why-num {
+            font-size: 2.5rem; font-weight: 900;
+            color: var(--purple);
+            line-height: 1;
+            margin-bottom: 0.25rem;
+        }
+
+        .why-item h4 {
+            font-size: 0.9rem; font-weight: 500;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.03em;
+        }
+
+        .why-item p {
+            font-size: 0.8rem; font-weight: 400;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* CONTACT */
+        #contact {
+            padding: 7rem 4rem;
+            background: var(--purple);
+            position: relative;
+            overflow: hidden;
+            color: var(--white);
+        }
+
+        #contact::before {
+            content: '';
+            position: absolute;
+            top: -200px; right: -200px;
+            width: 600px; height: 600px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .contact-info h2 {
+            font-size: clamp(2rem, 3.5vw, 3rem);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.25rem;
+        }
+
+        .contact-info h2 em { font-style: italic; color: #e0aaff; }
+
+        .contact-info p {
+            font-size: 1rem; font-weight: 300;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.75;
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-details {
+            display: flex; flex-direction: column; gap: 0.75rem;
+        }
+
+        .contact-row {
+            display: flex; align-items: center; gap: 0.75rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-row i {
+            width: 18px;
+            color: #e0aaff;
+            font-size: 0.85rem;
+        }
+
+        .contact-actions {
+            display: flex; flex-direction: column; gap: 1rem;
+        }
+
+        .btn-wa {
+            display: flex; align-items: center; justify-content: center; gap: 0.75rem;
+            background: #25D366;
+            color: #fff;
+            padding: 1.1rem 2rem;
+            border-radius: 14px;
+            font-weight: 500;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .btn-wa:hover { background: #1DA851; transform: translateY(-2px); }
+
+        .btn-insta {
+            display: flex; align-items: center; justify-content: center; gap: 0.75rem;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: var(--white);
+            padding: 1.1rem 2rem;
+            border-radius: 14px;
+            font-weight: 400;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .btn-insta:hover { background: rgba(255,255,255,0.15); }
+
+        .contact-note {
+            margin-top: 1.5rem;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--white);
+            padding: 2rem 4rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        footer p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        footer p a {
+            color: var(--purple);
+            text-decoration: none;
+        }
+
+        /* GALLERY ENHancements */
+        .gallery-item {
+            position: relative;
+            aspect-ratio: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(106, 1, 181, 0.9), rgba(106, 1, 181, 0.4));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            color: var(--white);
+            text-align: center;
+        }
+        .gallery-item:hover img { transform: scale(1.15); }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        
+        .gallery-overlay i { font-size: 1.5rem; margin-bottom: 0.75rem; transform: scale(0.5); transition: transform 0.4s ease; }
+        .gallery-item:hover .gallery-overlay i { transform: scale(1); }
+        
+        .gallery-overlay h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.25rem; }
+        .gallery-overlay p { font-size: 0.75rem; opacity: 0.8; }
+
+        /* ANIMATIONS */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #hero .hero-badge, #hero .hero-title, #hero .hero-desc, #hero .hero-actions {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: heroFade 0.8s forwards;
+        }
+
+        #hero .hero-title { animation-delay: 0.2s; }
+        #hero .hero-desc { animation-delay: 0.4s; }
+        #hero .hero-actions { animation-delay: 0.6s; }
+
+        @keyframes heroFade {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* MOBILE */
+        @media (max-width: 900px) {
+            nav { padding: 1rem 1.5rem; }
+            .nav-links { display: none; }
+            .hero-stats { display: none; }
+            #hero { padding: 0 1.5rem 4rem; }
+            .intro-strip { padding: 1rem 1.5rem; gap: 1.25rem; }
+            #services, #destinations, #why, #contact { padding: 4rem 1.5rem; }
+            .destinations-layout { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: repeat(2, 1fr); }
+            .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+            footer { padding: 1.5rem; flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#hero" class="logo">
+            <div class="logo-badge">JH</div>
+            <div>
+                <div class="logo-text">The Joyful Holidays</div>
+                <div class="logo-sub">Salem &bull; Est. 2020</div>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" class="nav-cta">Book a Trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-stats">
+            <div class="stat-pill">
+                <div class="stat-num">500+</div>
+                <div class="stat-label">Tours Done</div>
+            </div>
+            <div class="stat-pill">
+                <div class="stat-num">4.9</div>
+                <div class="stat-label">Avg Rating</div>
+            </div>
+            <div class="stat-pill">
+                <div class="stat-num">12+</div>
+                <div class="stat-label">Destinations</div>
+            </div>
+        </div>
+
+        <div class="hero-badge">
+            <span></span>
+            Salem's Premier Tour Operator
+        </div>
+        <h1 class="hero-title">
+            Your Journey,<br><em>Our Passion.</em>
+        </h1>
+        <p class="hero-desc">
+            Specialized school tours, high-energy college trips, Western Ghats trekking, and starlit camping retreats — all from Salem.
+        </p>
+        <div class="hero-actions">
+            <a href="https://wa.me/917708666628" class="btn-primary">
+                <i class="fab fa-whatsapp"></i> Book on WhatsApp
+            </a>
+            <a href="#services" class="btn-secondary">
+                <i class="fas fa-compass"></i> Explore Tours
+            </a>
+        </div>
+
+        <div class="scroll-hint">
+            <i class="fas fa-chevron-down" style="font-size:0.8rem;"></i>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- STRIP -->
+    <div class="intro-strip">
+        <div class="strip-item"><i class="fas fa-shield-halved"></i> Safety First Always</div>
+        <div class="strip-item"><i class="fas fa-users"></i> Group & Custom Packages</div>
+        <div class="strip-item"><i class="fas fa-map-location-dot"></i> Salem &bull; 636003</div>
+        <div class="strip-item"><i class="fas fa-phone"></i> +91 7708666628</div>
+        <div class="strip-item"><i class="fas fa-star" style="color:var(--gold);"></i> Trusted by Schools &amp; Colleges</div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services" class="reveal">
+        <div class="section-eyebrow">What We Offer</div>
+        <h2 class="section-title">Crafted Journeys for<br><em>Every Explorer</em></h2>
+        <p class="section-lead">From educational school excursions to rugged mountain treks — we design every trip with safety, joy, and memories in mind.</p>
+
+        <div class="services-grid">
+            <div class="service-card green">
+                <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="service-content">
+                    <div class="service-icon green"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>School Tours</h3>
+                    <p>Safe, structured educational journeys for school groups. We handle permits, transport, accommodation, and itinerary so teachers can focus on the students.</p>
+                    <div class="service-tag">All age groups</div>
+                </div>
+            </div>
+            <div class="service-card gold">
+                <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="service-content">
+                    <div class="service-icon gold"><i class="fas fa-flask"></i></div>
+                    <h3>College &amp; Industrial Visits</h3>
+                    <p>Organized industrial tours and college excursions with coordination for large groups. Perfect for engineering, science, and management students.</p>
+                    <div class="service-tag">50–500 students</div>
+                </div>
+            </div>
+            <div class="service-card bark">
+                <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="service-content">
+                    <div class="service-icon bark"><i class="fas fa-mountain-sun"></i></div>
+                    <h3>Trekking Expeditions</h3>
+                    <p>Expert-guided treks across the Western Ghats — Kodaikanal, Yercaud, Ooty, and beyond. Beginner-friendly to challenging trails available.</p>
+                    <div class="service-tag">Western Ghats</div>
+                </div>
+            </div>
+            <div class="service-card sage">
+                <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="service-content">
+                    <div class="service-icon sage"><i class="fas fa-campground"></i></div>
+                    <h3>Camping &amp; Retreats</h3>
+                    <p>Overnight camping under South India's star-filled skies. Bonfires, nature walks, and team-building activities for groups and families.</p>
+                    <div class="service-tag">Overnight stays</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section id="destinations" class="reveal">
+        <div class="destinations-layout">
+            <div>
+                <div class="section-eyebrow">Where We Go</div>
+                <h2 class="section-title">Popular<br><em>Destinations</em></h2>
+                <p class="section-lead" style="margin-bottom:0;">Handpicked trails and sites across Tamil Nadu and South India.</p>
+
+                <div class="dest-list">
+                    <div class="dest-item">
+                        <div class="dest-dot"></div>
+                        <span class="dest-name">Yercaud Hills</span>
+                        <span class="dest-type">Trekking · Camping</span>
+                    </div>
+                    <div class="dest-item">
+                        <div class="dest-dot"></div>
+                        <span class="dest-name">Kodaikanal</span>
+                        <span class="dest-type">College Tours · Trek</span>
+                    </div>
+                    <div class="dest-item">
+                        <div class="dest-dot"></div>
+                        <span class="dest-name">Ooty &amp; Nilgiris</span>
+                        <span class="dest-type">School Tours</span>
+                    </div>
+                    <div class="dest-item">
+                        <div class="dest-dot"></div>
+                        <span class="dest-name">Munnar, Kerala</span>
+                        <span class="dest-type">Adventure · Family</span>
+                    </div>
+                    <div class="dest-item">
+                        <div class="dest-dot"></div>
+                        <span class="dest-name">Courtallam</span>
+                        <span class="dest-type">Day Trips</span>
+                    </div>
+                    <div class="dest-item">
+                        <div class="dest-dot"></div>
+                        <span class="dest-name">Theni &amp; Meghamalai</span>
+                        <span class="dest-type">Advanced Trek</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visual-card">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="Majestic mountains of South India">
+                <div class="visual-card-overlay"></div>
+                <div class="visual-card-text">
+                    <h4>Western Ghats, Tamil Nadu</h4>
+                    <p>Mist-wrapped valleys &amp; ancient forests await</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="reveal" style="padding: 7rem 4rem; background: var(--near-white);">
+        <div class="section-eyebrow">Our Memories</div>
+        <h2 class="section-title">Visual <em>Stories</em></h2>
+        <p class="section-lead">A glimpse into the joy, laughter, and wonder of our past expeditions. Each photo tells a story of adventure and the lasting bonds formed on the road.</p>
+        <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=80">
+                <div class="gallery-overlay">
+                    <i class="fas fa-mountain"></i>
+                    <h4>Kodaikanal Peaks</h4>
+                    <p>Altitude exploration at its finest.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80">
+                <div class="gallery-overlay">
+                    <i class="fas fa-campground"></i>
+                    <h4>Riverside Camping</h4>
+                    <p>Under the star-filled South Indian sky.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80">
+                <div class="gallery-overlay">
+                    <i class="fas fa-industry"></i>
+                    <h4>Industrial Visit</h4>
+                    <p>Real-world insights for engineering groups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="reveal" style="padding: 7rem 4rem; background: var(--white);">
+        <div class="section-eyebrow">Testimonials</div>
+        <h2 class="section-title">What Our <em>Groups Say</em></h2>
+        <div class="services-grid">
+            <div class="dest-item" style="flex-direction:column; align-items:flex-start; gap:0.5rem;">
+                <div style="color:var(--gold);"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p style="font-size:0.9rem; font-style:italic; color:var(--text-dark);">"The best school tour we've ever had. Safety was top notch!"</p>
+                <span style="font-size:0.75rem; font-weight:700;">— St. Joseph High School, Salem</span>
+            </div>
+            <div class="dest-item" style="flex-direction:column; align-items:flex-start; gap:0.5rem;">
+                <div style="color:var(--gold);"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p style="font-size:0.9rem; font-style:italic; color:var(--text-dark);">"Our industrial visit was perfectly coordinated. Highly recommended."</p>
+                <span style="font-size:0.75rem; font-weight:700;">— Govt Engineering College, Erode</span>
+            </div>
+            <div class="dest-item" style="flex-direction:column; align-items:flex-start; gap:0.5rem;">
+                <div style="color:var(--gold);"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p style="font-size:0.9rem; font-style:italic; color:var(--text-dark);">"The Yercaud trekking expedition was challenging yet safe. Amazing views!"</p>
+                <span style="font-size:0.75rem; font-weight:700;">— Adventure Club, Salem</span>
+            </div>
+            <div class="dest-item" style="flex-direction:column; align-items:flex-start; gap:0.5rem;">
+                <div style="color:var(--gold);"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p style="font-size:0.9rem; font-style:italic; color:var(--text-dark);">"A wonderful family retreat. The camping experience was truly starlit."</p>
+                <span style="font-size:0.75rem; font-weight:700;">— The Kumar Family</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="reveal" style="padding: 7rem 4rem; background: var(--near-white);">
+        <div class="section-eyebrow">About Us</div>
+        <h2 class="section-title">Established <em>since 2020</em></h2>
+        <p class="section-lead" style="max-width: 80ch;">Based in the heart of Salem, **The Joyful Holidays** was born from a passion for exploring the untamed beauty of South India. Over the last few years, we have evolved into Salem's premier tour operator, trusted by dozens of schools and colleges for their most important excursions.</p>
+        <p class="section-lead" style="max-width: 80ch; margin-top:-3rem;">Our mission is simple: **To create journeys that inspire discovery while prioritizing safety above all else.** From the misty peaks of the Western Ghats to the industrial hubs of Tamil Nadu, we provide end-to-door coordination, ensuring that every student and explorer returns with a heart full of memories and a mind full of new knowledge.</p>
+        <div class="services-grid" style="margin-top: 3rem;">
+            <div>
+                <h4 style="color:var(--purple); margin-bottom:0.5rem;">Local Roots</h4>
+                <p style="font-size:0.9rem; color:var(--text-muted);">Born in Salem, serving the entire South Indian region with local expertise.</p>
+            </div>
+            <div>
+                <h4 style="color:var(--purple); margin-bottom:0.5rem;">Safety Passion</h4>
+                <p style="font-size:0.9rem; color:var(--text-muted);">Rigorous protocols and trained guides ensure every trip is zero-risk.</p>
+            </div>
+            <div>
+                <h4 style="color:var(--purple); margin-bottom:0.5rem;">Joyful Memories</h4>
+                <p style="font-size:0.9rem; color:var(--text-muted);">We don't just book trips; we craft experiences that last a lifetime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-layout">
+            <div class="contact-info">
+                <h2>Let's Plan Your<br><em>Next Adventure</em></h2>
+                <p>Reach out on WhatsApp for the fastest response. We'll help you design the perfect trip — whether it's 20 students or 200.</p>
+                <div class="contact-details">
+                    <div class="contact-row">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 7708666628</span>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fas fa-location-dot"></i>
+                        <span>New Bus Stand Area, Salem — 636003, Tamil Nadu</span>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fab fa-instagram"></i>
+                        <span>@the_joyful_holidays_official</span>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fas fa-at"></i>
+                        <span>@hari_yuvi_006</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="contact-actions">
+                    <a href="https://wa.me/917708666628?text=Hi%2C%20I%27d%20like%20to%20book%20a%20tour%20with%20The%20Joyful%20Holidays!" class="btn-wa">
+                        <i class="fab fa-whatsapp" style="font-size:1.2rem;"></i>
+                        Chat on WhatsApp
+                    </a>
+                    <a href="https://instagram.com/the_joyful_holidays_official" class="btn-insta">
+                        <i class="fab fa-instagram" style="font-size:1.1rem;"></i>
+                        Follow on Instagram
+                    </a>
+                    <a href="tel:+917708666628" class="btn-insta">
+                        <i class="fas fa-phone" style="font-size:0.95rem;"></i>
+                        Call Us Directly
+                    </a>
+                </div>
+                <p class="contact-note">We typically respond within minutes on WhatsApp.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 The Joyful Holidays &mdash; Salem, Tamil Nadu. All rights reserved.</p>
+        <p>Crafted for <a href="https://instagram.com/the_joyful_holidays_official">@the_joyful_holidays_official</a></p>
+    </footer>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Initial check
+        reveal();
+    </script>
+</body>
+</html>
