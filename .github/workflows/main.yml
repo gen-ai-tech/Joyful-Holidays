@@ -3,29 +3,34 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main   # or your branch name
+      - main   # change if your branch is different
 
+# ✅ REQUIRED PERMISSIONS (THIS FIXES YOUR ERROR)
 permissions:
   contents: read
   pages: write
-  id-token: write   # ✅ IMPORTANT FIX
+  id-token: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout code
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Setup GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      # Upload site files
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
-          path: ./   # your build folder (change if needed)
+          path: ./   # 👉 change if your site is in dist/build
 
+      # Deploy
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
