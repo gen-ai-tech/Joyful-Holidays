@@ -3,9 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main   # change if your branch is different
+      - main
 
-# ✅ REQUIRED PERMISSIONS (THIS FIXES YOUR ERROR)
+# ✅ REQUIRED PERMISSIONS
 permissions:
   contents: read
   pages: write
@@ -20,17 +20,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Setup GitHub Pages
+      # Setup GitHub Pages (UPDATED)
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
-      # Upload site files
+      # Upload site files (UPDATED)
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
-          path: ./   # 👉 change if your site is in dist/build
+          path: ./   # change if needed
 
-      # Deploy
+      # Deploy (UPDATED)
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
